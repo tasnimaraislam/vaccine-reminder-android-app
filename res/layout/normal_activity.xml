@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    android:orientation="vertical"
+    android:paddingTop="1dp" >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Vaccine for Children (0-15 years) :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_weight="1.20"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_weight="0.11"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Vaccine for Women (15-49 years) :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ListView
+            android:id="@+id/listView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Vaccine for Adults :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ListView
+            android:id="@+id/listView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

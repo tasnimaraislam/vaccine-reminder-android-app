@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    android:orientation="vertical"
+    android:paddingTop="1dp" >    
+
+    <TextView
+        android:id="@+id/textVaccineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Vaccine Info"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    	<RelativeLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+    	    android:background="#FFFFFF"
+    	    android:orientation="vertical"
+    	    android:padding="10dp" >
+
+    		<TextView
+    		    android:id="@+id/vaccInfo1"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignParentLeft="true"
+    		    android:layout_alignParentRight="true"
+    		    android:layout_alignParentTop="true"
+    		    android:text="Large Text"
+    		    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    		<TextView
+    		    android:id="@+id/vaccInfo2"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignLeft="@+id/vaccInfo1"
+    		    android:layout_below="@+id/vaccInfo1"
+    		    android:layout_marginTop="16dp"
+    		    android:text="TextView"
+    		    android:textAppearance="?android:attr/textAppearanceMedium"  />
+
+    		<TextView
+    		    android:id="@+id/vaccInfo3"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignLeft="@+id/vaccInfo2"
+    		    android:layout_below="@+id/vaccInfo2"
+    		    android:layout_marginTop="29dp"
+    		    android:text="TextView"
+    		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    		<TextView
+    		    android:id="@+id/vaccInfo4"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignLeft="@+id/vaccInfo3"
+    		    android:layout_below="@+id/vaccInfo3"
+    		    android:layout_marginTop="31dp"
+    		    android:text="TextView"
+    		    android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+    	</RelativeLayout>
+
+</LinearLayout>

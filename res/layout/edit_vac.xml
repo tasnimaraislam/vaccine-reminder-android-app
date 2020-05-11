@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    android:orientation="vertical"
+    android:paddingTop="1dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Edit Vaccine Info"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+        <RelativeLayout
+     android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:onClick="removevacc"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/vacName"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="119dp"
+            android:onClick="editvacc"
+            android:text="Edit" />
+
+        <EditText
+            android:id="@+id/editTextEditVac"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_alignRight="@+id/vacName"
+            android:layout_alignTop="@+id/imageButton2"
+            android:editable="false"
+            android:ems="10" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button2"
+            android:layout_toRightOf="@+id/editTextEditVac"
+            android:cropToPadding="true"
+            android:src="@drawable/calendar_icon" />
+
+        <TextView
+            android:id="@+id/TextTime02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTextEditVac"
+            android:layout_alignLeft="@+id/editTextEditVac"
+            android:layout_marginBottom="14dp"
+            android:text="Date: " />
+
+        <EditText
+            android:id="@+id/vacName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextTime02"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_marginBottom="16dp"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/vacName"
+            android:layout_toLeftOf="@+id/button2"
+            android:text="Vaccine Name:" />
+
+        <EditText
+            android:id="@+id/ETPerson02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/TVPerson02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ETPerson02"
+            android:layout_alignLeft="@+id/ETPerson02"
+            android:text="Enter Person Name:" />
+
+    </RelativeLayout>
+
+</LinearLayout>
